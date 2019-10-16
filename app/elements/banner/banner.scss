@@ -1,0 +1,146 @@
+.banner {
+  padding: 35px 0 100px 0;
+  background: url(img/banner-bg.jpg)no-repeat center/cover;
+
+  @media(max-width: 992px) {
+    padding: 35px 0 50px 0;
+  }
+
+  @media(max-width: 576px) {
+    padding: 25px 0 25px 0;
+  }
+
+  &__br {
+    @media(max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media(max-width: 1440px) {
+      padding: 70px 0 0 0;
+      flex-direction: column-reverse;
+    }
+
+    @media(max-width: 768px) {
+      padding: 40px 0 0 0;
+    }
+
+    @media(max-width: 576px) {
+      padding: 25px 0 0 0;
+    }
+  }
+
+  &__text {
+    max-width: 780px;
+    padding: 75px 0 0 0;
+    z-index: 3;
+
+    @media(max-width: 768px) {
+      padding: 40px 0 0 0;
+    }
+  }
+
+  &__descr {
+    margin: 20px 0 0 0;
+
+    @media(max-width: 576px) {
+      margin: 10px 0 0 0;
+    }
+  }
+
+  &__btn {
+    margin: 40px 0 0 0;
+
+    @media(max-width: 576px) {
+      margin: 30px 0 0 0;
+    }
+  }
+
+  &__info {
+    margin: 50px 0 0 0;
+
+    @media(max-width: 768px) {
+      margin: 40px 0 0 0;
+    }
+
+    @media(max-width: 576px) {
+      margin: 30px 0 0 0;
+    }
+  }
+
+  &__slogan {
+    margin: 40px 0 0 0;
+
+    @media(max-width: 576px) {
+      margin: 30px 0 0 0;
+    }
+  }
+
+  &__schedule {
+    display: flex;
+    align-items: center;
+    margin: 35px 0 0 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+
+    @media(max-width: 768px) {
+      margin: 20px 0 0 0;
+    }
+
+    @media(max-width: 576px) {
+      margin: 10px 0 0 0;
+      font-size: 15px;
+    }
+
+  }
+
+  &__calendar-svg {
+    margin: 0 10px 0 0;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+    transform: translateX(115px);
+
+    @media(max-width: 1620px) {
+      transform: translateX(40px);
+    }
+
+    @media(max-width: 1440px) {
+      transform: translateX(0px);
+    }
+
+    @media(max-width: 992px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 640px;
+      height: 487px;
+      background: url(img/book-bg.png)no-repeat center/cover;
+      top: 125px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+
+      @media(max-width: 1440px) {
+        display: none;
+      }
+    }
+  }
+
+
+}

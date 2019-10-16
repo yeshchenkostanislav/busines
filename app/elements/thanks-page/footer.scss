@@ -1,0 +1,39 @@
+.thanks-page {
+  .footer {
+    &__wrap {
+      flex-direction: row;
+      align-items: center;
+
+      @media(max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    &__box {
+      max-width: 445px;
+      margin: 0 0 0 25px;
+      align-items: flex-start;
+
+      @media(max-width: 768px) {
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    &__info {
+      margin: 0;
+
+      @media(max-width: 768px) {
+        margin: 20px 0 0 0;
+      }
+    }
+
+    &__documents {
+      max-width: 400px;
+
+      @media(max-width: 768px) {
+        line-height: 22px;
+      }
+    }
+  }
+}

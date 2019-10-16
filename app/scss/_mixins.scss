@@ -1,0 +1,30 @@
+@mixin placeholder($color) {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+@mixin block-select() {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}

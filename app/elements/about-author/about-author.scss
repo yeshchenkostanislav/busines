@@ -1,0 +1,138 @@
+.about-author {
+  background-color: #1f1b42;
+  padding: 100px 0 0 0;
+  color: #a0a3b3;
+
+  @media(max-width: 1200px) {
+    padding: 50px 0 50px 0;
+  }
+
+  @media(max-width: 576px) {
+    padding: 25px 0 25px 0;
+  }
+
+  &__wrap {
+    align-items: center;
+  }
+
+  &__title {
+    color: #fffefe;
+    font-size: 50px;
+    font-weight: 700;
+
+    @media(max-width: 1200px) {
+      font-size: 40px;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 23px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 55px 0 0 0;
+
+    @media(max-width: 1200px) {
+      flex-direction: column-reverse;
+    }
+
+    @media(max-width: 576px) {
+      margin: 40px 0 0 0;
+    }
+  }
+
+  &__text {
+    max-width: 810px;
+    width: 100%;
+    z-index: 5;
+
+    @media(max-width: 1200px) {
+      margin: 50px 0 0 0;
+    }
+  }
+
+  &__name {
+    color: #ba88ff;
+    font-size: 30px;
+    font-weight: 800;
+
+    @media(max-width: 576px) {
+      font-size: 22px;
+    }
+  }
+
+  &__list {
+    margin: 30px 0 0 0;
+    padding: 0 0 0 40px;
+    width: 100%;
+
+    @media(max-width: 576px) {
+      padding: 0 0 0 30px;
+    }
+  }
+
+  &__list-item {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    position: relative;
+
+    @media(max-width: 576px) {
+      font-size: 16px;
+    }
+
+    &:before {
+      content: '';
+      background: url(img/check.png)no-repeat center/cover;
+      position: absolute;
+      display: block;
+      width: 27px;
+      height: 24px;
+      left: -40px;
+
+      @media(max-width: 576px) {
+        width: 20px;
+        height: 22px;
+        left: -30px;
+      }
+    }
+
+    &:not(:first-child) {
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &__btn {
+    margin: 55px 0 0 0;
+
+    @media(max-width: 576px) {
+      margin: 30px 0 0 0;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+
+    &:before {
+      content: '';
+      background: url(img/photo-bg.png)no-repeat center/cover;
+      position: absolute;
+      display: block;
+      width: 700px;
+      height: 500px;
+      z-index: -1;
+
+      @media(max-width: 1600px) {
+        display: none;
+
+      }
+    }
+  }
+}
